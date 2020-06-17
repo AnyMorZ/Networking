@@ -1,0 +1,17 @@
+platform :ios,'10.0'
+
+use_frameworks!
+
+workspace 'Networking.xcworkspace'
+
+target 'Networking' do
+    project 'Networking/Networking.xcodeproj'
+    pod 'Alamofire', '~> 5.0'
+    pod 'GzipSwift'
+end
+
+target 'Example' do
+    project 'Example/Example.xcodeproj'
+    pod 'Alamofire', '~> 5.0'
+    pod 'GzipSwift'
+end
