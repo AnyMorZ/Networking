@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Network.pinger.ping(address: "http://www.baidu.com") { result in
+        Network.pinger.ping(hostName: "www.baidu.com") { result in
             print(result)
         }.start()
 
